@@ -396,7 +396,82 @@
   display: none;
 }
 
-.present {}
+/* present */
+.present {
+  display: flex;
+  flex-direction: column;
+
+  padding: 16px 22px 22px 16px;
+  box-sizing: border-box;
+  border-radius: 16px;
+
+  font-weight: bold;
+  color: #ffffff;
+  background-color: darkseagreen;
+}
+
+.present--bg-berry {
+  background-image: url(../img/present__bg-berry.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.present--bg-chocolate {
+  background-image: url(../img/present__bg-chocolate.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.present__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.present__intro {
+  margin-top: 0;
+  margin-bottom: 42px;
+
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.present__link {
+  display: flex; /* TODO: хорошо бы выделить стили центрирование кнопки в класс button-theme.*/
+  justify-content: center;
+  align-items: center;
+
+
+  margin-left: auto;
+
+  min-height: 48px;
+  padding-left: 22px;
+  padding-right: 22px;
+  text-decoration: none;
+}
+
+/* present-list */
+.present-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.present-list__item {
+  max-width: 560px;
+  margin-right: 26px;
+}
+
+.present-list__item:nth-child(even) {
+  margin-right: 0;
+}
+
+.present-list__item:nth-child(n + 3) {
+  margin-top: 26px;
+}
 
 .advantage {
   padding: 25px 20px 35px;
@@ -1045,22 +1120,7 @@
 .main__slider {}
 
 .main__present {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.main__present-item {
-  margin-right: 26px;
-  width: calc(50% - 26px);
-}
-
-.main__present-item:nth-child(even) {
-  width: 50%;
-  margin-right: 0;
-}
-
-.main__present-item:nth-child(n + 3) {
-  margin-top: 26px;
+  margin-bottom: 40px;
 }
 
 .main__product-list {
