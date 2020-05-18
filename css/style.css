@@ -931,6 +931,104 @@
   width: 100%;
 }
 
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  color: #ffffff;
+  background-color: darkcyan;
+}
+
+.pagination__item {
+  margin-right: 4px;
+}
+
+.pagination__item:last-child {
+  margin-right: 0;
+}
+
+.pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 26px;
+  height: 26px;
+
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.pagination__link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.pagination__link--active {
+  color: #323232;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.pagination__link--icon-back {
+  width: 26px;
+  height: 26px;
+  transform: rotate(180deg);
+
+  background-image: url(../img/icon-pagination__arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pagination__link--icon-back-disabled {
+  width: 26px;
+  height: 26px;
+  transform: rotate(0);
+
+  background-image: url(../img/icon-pagination__arrow--disabled.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pagination__link--icon-back-disabled:hover {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.pagination__link--icon-next {
+  width: 26px;
+  height: 26px;
+  transform: rotate(0);
+
+  background-image: url(../img/icon-pagination__arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pagination__link--icon-next-disabled {
+  width: 26px;
+  height: 26px;
+  transform: rotate(180deg);
+
+  background-image: url(../img/icon-pagination__arrow--disabled.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pagination__link--icon-next-disabled:hover {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
 /* header */
 .header {
   width: 1146px;
@@ -1261,8 +1359,19 @@
   width: 1146px;
   margin: 0 auto;
 
+  display: flex;
+  flex-direction: column;
+
   padding-left: 27px;
   padding-right: 27px;
+
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.2) 0,
+    rgba(255, 255, 255, 0.2) 1px,
+    transparent 1px,
+    transparent 100%
+  );
 }
 
 .main-catalog__bread-crumbs {
@@ -1272,6 +1381,16 @@
 .main-catalog__catalog-title {
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+.main-catalog__product-list {
+  margin-bottom: 80px;
+}
+
+.main-catalog__pagination {
+  margin-left: auto;
+  margin-bottom: 30px;
+  background-color: transparent;
 }
 
 /* footer */
