@@ -771,7 +771,7 @@
 }
 
 .product:hover .product__footer {
-  left: auto;
+  visibility: visible;
 }
 
 .product__header {
@@ -816,9 +816,7 @@
 
 .product__title {
   max-width: 267px;
-
   margin: 0 auto;
-  margin-bottom: 11px;
 }
 
 .product__link {
@@ -842,10 +840,12 @@
 }
 
 .product__footer {
+  visibility: hidden;
+
   display: flex;
+  padding-top: 11px;
 
   position: absolute;
-  left: -10000px;
   z-index: 10;
 
   width: 100%;
