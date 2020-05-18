@@ -7,7 +7,7 @@
   <title>template</title>
 </head>
 <body class="page">
-  <header class="header">
+  <header class="page__header header">
     <nav class="header__nav">
       <a href="#" class="header__nav-logo logo">
         <img class="logo__image" src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип магазина мороженого Глэйси">
@@ -139,7 +139,7 @@
       <p class="header__contact-phone">8 812 450-25-25</p>
     </div>
   </header>
-  <main class="main">
+  <main class="page__main main">
     <div class="main__slider slider">
       <div class="slider__pens slider-pens">
         <div class="slider-pens__item">
@@ -157,16 +157,22 @@
       </div>
       <div class="slider__slide-list">
         <div class="slider__slide">
-          <div class="slider__slide-intro"></div>
-          <div class="slider__slide-link link link--theme-button"></div>
+          <div class="slider__slide-content">
+            <p class="slider__slide-intro">Крем-брюле и пломбир с малиновым джемом</p>
+            <a class="slider__slide-link link button-theme">Давайте оба!</a>
+          </div>
         </div>
         <div class="slider__slide">
-          <div class="slider__slide-intro"></div>
-          <div class="slider__slide-link link link--theme-button"></div>
+          <div class="slider__slide-content">
+            <p class="slider__slide-intro">Шоколадный пломбир и лимонный сорбет</p>
+            <a class="slider__slide-link link button-theme">Давайте оба!</a>
+          </div>
         </div>
         <div class="slider__slide">
-          <div class="slider__slide-intro"></div>
-          <div class="slider__slide-link link link--theme-button"></div>
+          <div class="slider__slide-content">
+            <p class="slider__slide-intro">Пломбир с помадкой и клубничный щербет</p>
+            <a class="slider__slide-link link button-theme">Давайте оба!</a>
+          </div>
         </div>
       </div>
     </div>
@@ -299,7 +305,7 @@
       <section class="main__contact-item contact"></section>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="page__footer footer">
     <ul class="footer__social-list">
       <li class="footer__social-item">
         <a class="footer__social-link footer__social-link--icon-facebook link" href="#"><span class="visually-hidden">Фейсбук</span></a>
