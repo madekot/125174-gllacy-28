@@ -146,6 +146,87 @@
       <li class="bread-crumbs__item"><a href="" class="bread-crumbs__link bread-crumbs__link--active link"><span class="link__text">Сливочное</span></a></li>
     </ul>
     <h1 class="main-catalog__catalog-title">Сливочное мороженое</h1>
+    <form class="main-catalog__filter-form filter-form">
+      <div class="filter-form__row">
+        <fieldset class="filter-form__item">
+          <label class="filter-form__item-title" for="sorting-select">Сортировка:</label>
+          <select class="filter-form__select" id ="sorting-select">
+            <option class="filter-form__select-option">по популярности</option>
+            <option class="filter-form__select-option">сначала недорогие</option>
+            <option class="filter-form__select-option">сначала дорогие</option>
+            <option class="filter-form__select-option">по жирности</option>
+          </select>
+        </fieldset>
+        <fieldset class="filter-form__item">
+          <label class="filter-form__item-title">Цена: 100 ₽ – 500 ₽</label>
+          <div class="filter-form__price-range slider-range">
+          <div class="slider-range__bar">
+            <div class="slider-range__bar-progress"></div>
+            <button class="slider-range__pen slider-range__pen--right" type="button"></button>
+            <button class="slider-range__pen slider-range__pen--left" type="button"></button>
+          </div>
+        </div>
+        </fieldset>
+        <fieldset class="filter-form__item">
+          <legend class="filter-form__item-title">Жирность:</legend>
+          <ul class="filter-form__filter-fat-list filter-fat-list">
+            <li class="filter-fat-list__item radio">
+              <input class="radio__input visually-hidden" type="radio" name="fat-filter" id="fat-filter-1">
+              <label class="radio__icon" for="fat-filter-1"></label>
+              <label class="radio__title" for="fat-filter-1">0%</label>
+            </li>
+            <li class="filter-fat-list__item radio">
+              <input class="radio__input visually-hidden" type="radio" name="fat-filter" id="fat-filter-2">
+              <label class="radio__icon" for="fat-filter-2"></label>
+              <label class="radio__title" for="fat-filter-2">до 10%</label>
+            </li>
+            <li class="filter-fat-list__item radio">
+              <input class="radio__input visually-hidden" type="radio" name="fat-filter" id="fat-filter-3">
+              <label class="radio__icon" for="fat-filter-3"></label>
+              <label class="radio__title" for="fat-filter-3">до 30%</label>
+            </li>
+            <li class="filter-fat-list__item radio">
+              <input class="radio__input visually-hidden" type="radio" name="fat-filter" id="fat-filter-4">
+              <label class="radio__icon" for="fat-filter-4"></label>
+              <label class="radio__title" for="fat-filter-4">выше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="filter-form__row">
+        <fieldset class="filter-form__item">
+          <legend class="filter-form__item-title">Наполнители:</legend>
+          <div class="filter-form__item-list toppings-list">
+            <div class="toppings-list__item-chocolate checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="filter-extender" id="filter-extender-1" checked>
+              <label class="checkbox__icon" for="filter-extender-1"></label>
+              <label class="checkbox__title" for="filter-extender-1">шоколадные</label>
+            </div>
+            <div class="toppings-list__item-sugar checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="filter-extender" id="filter-extender-2" checked>
+              <label class="checkbox__icon" for="filter-extender-2"></label>
+              <label class="checkbox__title" for="filter-extender-2">сахарные присыпки</label>
+            </div>
+            <div class="toppings-list__item-fruits checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="filter-extender" id="filter-extender-3">
+              <label class="checkbox__icon" for="filter-extender-3"></label>
+              <label class="checkbox__title" for="filter-extender-3">фрукты</label>
+            </div>
+            <div class="toppings-list__item-syrups checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="filter-extender" id="filter-extender-4">
+              <label class="checkbox__icon" for="filter-extender-4"></label>
+              <label class="checkbox__title" for="filter-extender-4">сиропы</label>
+            </div>
+            <div class="toppings-list__item-jams checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="filter-extender" id="filter-extender-5">
+              <label class="checkbox__icon" for="filter-extender-5"></label>
+              <label class="checkbox__title" for="filter-extender-5">джемы</label>
+            </div>
+          </div>
+        </fieldset>
+        <button class="filter-form__submit" type="submit">Применить</button>
+      </div>
+    </form>
     <ul class="main-catalog__product-list product-list">
       <li class="product-list__item">
         <article class="product">
