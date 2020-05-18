@@ -1580,7 +1580,7 @@
   background-color: #849D8F;
   background:
     radial-gradient(
-      at top center,
+      circle closest-corner at center 300px,
       rgba(215, 242, 227, 0.75),
       #849D8F
     );
@@ -1601,12 +1601,7 @@
   font-family: 'Roboto', 'Arial', sans-serif;
 
   background-color: #849D8F;
-  background:
-    radial-gradient(
-      at top center,
-      rgba(215, 242, 227, 0.75),
-      #849D8F
-    );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, #849D8F 100%), #849D8F;
 
   color: #ffffff;
 }
