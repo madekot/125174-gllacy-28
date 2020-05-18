@@ -656,6 +656,26 @@
   border-radius: 4px 4px 0 0;
 }
 
+.product--icon-popular {
+  position: relative;
+}
+
+.product--icon-popular::after {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  left: 0;
+  top: 0;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  background-image: url(../img/icon-popular-product.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .product:before {
   content: "";
   position: absolute;
@@ -1043,9 +1063,8 @@
   margin-top: 26px;
 }
 
-.main__product {
-  display: flex;
-  flex-wrap: wrap;
+.main__product-list {
+  margin-bottom: 40px;
 }
 
 .main__product-item {
