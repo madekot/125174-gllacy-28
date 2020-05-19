@@ -1,5 +1,4 @@
-/* radio */
-
+/*radio */
 .radio {
   display: flex;
   align-items: center;
@@ -85,7 +84,6 @@
 
   cursor: pointer;
 }
-
 
 .checkbox__title {
   padding-left: 14px;
@@ -857,6 +855,11 @@
 
 .bread-crumbs__link {
   padding-right: 14px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
   background-image: url(../img/arrow__bread-crumbs.svg);
   background-repeat: no-repeat;
   background-position: center right;
@@ -1242,7 +1245,6 @@
   padding-right: 11px;
 }
 
-
 /* toppings-list */
 .toppings-list {
   min-height: 36px;
@@ -1251,6 +1253,10 @@
 
   display: flex;
   flex-wrap: wrap;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
 
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
@@ -1757,6 +1763,10 @@
 .main-catalog__catalog-title {
   margin-top: 0;
   margin-bottom: 30px;
+
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
 }
 
 .main-catalog__filter-form {
