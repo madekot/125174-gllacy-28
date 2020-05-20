@@ -372,5 +372,28 @@
     </p>
   </div>
 </footer>
+<section class="page__feedback page__feedback-hidden feedback">
+  <div class="feedback-content">
+    <p class="feedback__intro">Мы обязательно вам ответим!</p>
+    <button class="feedback__button-close button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <form class="feedback__form" action="#" method="post" name="feedback">
+      <fieldset class="feedback__form-fields-list fieldset">
+        <p class="feedback__form-field">
+          <label for="form-name" class="visually-hidden">Имя Фамилия</label>
+          <input class="feedback__form-field-item feedback__form-field-item--size input" type="text" placeholder="Имя Фамилия" id="form-name">
+        </p>
+        <p class="feedback__form-field">
+          <label for="form-email" class="visually-hidden">Email</label>
+          <input class="feedback__form-field-item feedback__form-field-item--size input" type="text" placeholder="email@example.com" id="form-email">
+        </p>
+        <p class="feedback__form-field">
+          <label class="visually-hidden" for="form-textarea">Ваш отзыв</label>
+          <textarea class="feedback__form-field-item textarea" name="feedback" id="form-textarea" placeholder="В свободной форме"></textarea>
+        </p>
+      </fieldset>
+      <button class="feedback__form-submit button-theme" type="submit">Отправить</button>
+    </form>
+  </div>
+</section>
 </body>
 </html>
